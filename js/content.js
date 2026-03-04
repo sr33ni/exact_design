@@ -70,27 +70,32 @@ window.productData = [
     {
       "id": 1,
       "question": "What is the purpose of a laser cutter for sheet metal?",
-      "answer": "It is designed to cut various types of sheet metal with precision, allowing intricate designs and shapes that are essential in manufacturing processes."
+      "answer": "It is designed to cut various types of sheet metal with precision, allowing intricate designs and shapes that are essential in manufacturing processes.",
+      "attribute": "open"
     },
     {
       "id": 2,
       "question": "What are the benefits of using aluminum tubing in manufacturing?",
-      "answer": ""
+      "answer": "",
+      "attribute": ""
     },
     {
       "id": 3,
       "question": "How is aluminum tubing produced?",
-      "answer": ""
+      "answer": "",
+      "attribute": ""
     },
     {
       "id": 4,
       "question": "What are the common applications of aluminum tubing?",
-      "answer": ""
+      "answer": "",
+      "attribute": ""
     },
     {
       "id": 5,
       "question": "Can aluminum tubing be customized?",
-      "answer": ""
+      "answer": "",
+      "attribute": ""
     }
   ]
 }

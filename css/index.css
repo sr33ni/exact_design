@@ -232,3 +232,12 @@ header {}
         }
     }
 }
+
+.accordian{
+    .card{
+        width: 100%;
+        p{
+            color: var(--secondary-800);
+        }
+    }
+}

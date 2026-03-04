@@ -75,3 +75,18 @@ function renderFeatures() {
 }
 
 renderFeatures();
+
+const faqContainer = document.getElementById("faqs");
+
+function renderFaqs() {
+  faqContainer.innerHTML = data.faqs.map((faq, index) => `
+    <details class="card" data-index="${index}" ${faq.attribute}>
+      <summary>
+         ${faq.question}
+      </summary>
+      <p>${faq.answer}</p>
+    </details>
+  `).join("");
+}
+
+renderFaqs();
