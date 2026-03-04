@@ -1,3 +1,99 @@
 @import url(./variables.css);
 @import url(./helper.css);
 @import url(./responsive.css);
+
+header {}
+
+.banner-section {
+    padding-top: 0;
+    gap: 0 100px
+}
+
+.breadcrumb-nav {
+    padding-block: 32px;
+}
+
+.carousel {
+    position: relative;
+    max-width: 1240px;
+    margin: 0 auto;
+    overflow: hidden;
+
+    .carousel-track {
+        display: flex;
+        transition: transform 0.4s ease;
+    }
+
+    .slide {
+        min-width: 100%;
+    }
+
+    .zoom-container {
+        position: relative;
+    }
+
+    .zoom-container img {
+        width: 100%;
+        display: block;
+    }
+
+    /* Zoom Preview */
+    .zoom-preview {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 250px;
+        height: 150px;
+        border: 2px solid black;
+        background-repeat: no-repeat;
+        background-size: 200%;
+        display: none;
+    }
+
+    .zoom-container:hover .zoom-preview {
+        display: block;
+    }
+
+    /* Buttons */
+    .carousel-btn {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.6);
+        color: white;
+        border: none;
+        padding: 10px 16px;
+        cursor: pointer;
+    }
+
+    .prev {
+        left: 20px;
+    }
+
+    .next {
+        right: 20px;
+    }
+
+    /* Thumbnails */
+    .carousel-thumbs {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .carousel-thumbs img {
+        width: 80px;
+        height: 50px;
+        object-fit: cover;
+        cursor: pointer;
+        opacity: 0.6;
+        border: 2px solid transparent;
+        transition: 0.3s;
+    }
+
+    .carousel-thumbs img.active {
+        opacity: 1;
+        border: 2px solid black;
+    }
+}
