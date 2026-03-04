@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
-
+    <script src="js/content.js"></script>
 </head>
 
 <body>
@@ -15,148 +15,165 @@
         </a>
     </header>
     <main>
-        <section class="section banner-section flex-box">
-            <div>
-                <nav class="breadcrumb-nav" aria-label="Breadcrumb">
-                    <ol class="breadcrumb">
-                        <li><a href="/">Products</a></li>
-                        <li>></li>
-                        <li aria-current="page"><a href="/">TWo For One Teister</a></li>
-                    </ol>
-                </nav>
-                <div>
-                    <span>BIS Certified</span>
-                    <span>ISO Certified</span>
-                    <span>CE Certified</span>
-                </div>
-                <h1>Premium HDPE Pipes & Coils for Modern Infrastructure</h1>
-                <ul>
-                    <li>
-                        Leak-Proof Fusion Joints
-                    </li>
-                    <li>Chemical Resistance</li>
-                    <li>
-                        50+ Year Service Life
-                    </li>
-                    <li>Flexible Installation</li>
-                    <li>Flexible Installation</li>
-                </ul>
-            </div>
-            <div>
-                <div class="carousel">
-                    <div class="carousel-track">
-                        <div class="slide">
-                            <div class="zoom-container">
-                                <img src="https://picsum.photos/800/500?1" alt="">
-                                <div class="zoom-preview"></div>
-                            </div>
-                        </div>
-
-                        <div class="slide">
-                            <div class="zoom-container">
-                                <img src="https://picsum.photos/800/500?2" alt="">
-                                <div class="zoom-preview"></div>
-                            </div>
-                        </div>
-
-                        <div class="slide">
-                            <div class="zoom-container">
-                                <img src="https://picsum.photos/800/500?3" alt="">
-                                <div class="zoom-preview"></div>
-                            </div>
-                        </div>
+        <section class="section banner-section ">
+            <nav class="breadcrumb-nav " aria-label="Breadcrumb">
+                <ol class="breadcrumb flex-box start nowrap">
+                    <li><a href="/">Products</a></li>
+                    <li>></li>
+                    <li aria-current="page"><a href="/">TWo For One Teister</a></li>
+                </ol>
+            </nav>
+            <div class="banner-content flex-box end">
+                <div class="flex-half order-one">
+                    <div>
+                        <span>BIS Certified</span>
+                        <span>ISO Certified</span>
+                        <span>CE Certified</span>
                     </div>
-
-                    <button class="carousel-btn prev">‹</button>
-                    <button class="carousel-btn next">›</button>
-
-                    <!-- Thumbnails -->
-                    <div class="carousel-thumbs"></div>
+                    <h1>Premium HDPE Pipes & Coils for Modern Infrastructure</h1>
+                    <ul class="list-check">
+                        <li>
+                            Leak-Proof Fusion Joints
+                        </li>
+                        <li>Chemical Resistance</li>
+                        <li>
+                            50+ Year Service Life
+                        </li>
+                        <li>Flexible Installation</li>
+                        <li>Flexible Installation</li>
+                    </ul>
                 </div>
-            </div>
-            <div>
-                <article>
-                    <p>Price Range</p>
-                    <h2>₹4,80,000 - 7,90,000</h2>
-                    <span>Shipping: 6-12 days</span>
-                    <span>Returns: If returned within 7 days</span>
-                    <span>Certifications: ISO Certified, BIS Certified</span>
-                </article>
-                <button type="button" class="btn primary">
-                    Get Custom Quote
-                </button>
-                <button type="button" class="btn secondary">
-                    View Technical Specs
-                </button>
+                <div class="flex-half order-two">
+                    <section class="carousel" aria-label="Image Gallery">
+
+                        <div class="carousel-track">
+
+                            <figure class="slide">
+                                <div class="zoom-container">
+                                    <img src="https://picsum.photos/800/500?1" alt="Gallery Image 1">
+                                    <div class="zoom-preview"></div>
+                                </div>
+                            </figure>
+
+                            <figure class="slide">
+                                <div class="zoom-container">
+                                    <img src="https://picsum.photos/800/500?2" alt="Gallery Image 2">
+                                    <div class="zoom-preview"></div>
+                                </div>
+                            </figure>
+
+                            <figure class="slide">
+                                <div class="zoom-container">
+                                    <img src="https://picsum.photos/800/500?3" alt="Gallery Image 3">
+                                    <div class="zoom-preview"></div>
+                                </div>
+                            </figure>
+
+                        </div>
+
+                        <nav class="carousel-controls" aria-label="Carousel Navigation">
+                            <button class="carousel-btn prev" aria-label="Previous Slide">‹</button>
+                            <button class="carousel-btn next" aria-label="Next Slide">›</button>
+                        </nav>
+
+                        <nav class="carousel-thumbnails" aria-label="Thumbnail Navigation">
+                            <ul class="carousel-thumbs"></ul>
+                        </nav>
+
+                    </section>
+                </div>
+                <div class="flex-half order-three">
+                    <article class="card">
+                        <p>Price Range</p>
+                        <h2>₹4,80,000 - 7,90,000</h2>
+                        <span>Shipping: 6-12 days</span>
+                        <span>Returns: If returned within 7 days</span>
+                        <span>Certifications: ISO Certified, BIS Certified</span>
+                    </article>
+                    <div role="group" class="flex-box alg-end">
+                        <button type="button" class="btn primary">
+                            Get Custom Quote
+                        </button>
+                        <button type="button" class="btn secondary">
+                            View Technical Specs
+                        </button>
+                    </div>
+                </div>
             </div>
         </section>
         <section class="section">
-            <p>Trusted by Hundreds of Companies Globally</p>
-            <ul>
+            <p class="txt-center txt-secondary">Trusted by Hundreds of Companies Globally</p>
+            <ul class="flex-box marquee">
                 <li>
-                    <img src="./assets/spon-info.png" alt="sponsor logo">
+                    <img src="./assets/spon-info.png" width="121px" alt="sponsor logo">
                 </li>
                 <li>
-                    <img src="./assets/spon-info.png" alt="sponsor logo">
+                    <img src="./assets/spon-info.png" width="121px" alt="sponsor logo">
                 </li>
                 <li>
-                    <img src="./assets/spon-info.png" alt="sponsor logo">
+                    <img src="./assets/spon-info.png" width="121px" alt="sponsor logo">
                 </li>
                 <li>
-                    <img src="./assets/spon-info.png" alt="sponsor logo">
+                    <img src="./assets/spon-info.png" width="121px" alt="sponsor logo">
                 </li>
+                <li>
+                    <img src="./assets/spon-info.png" width="121px" alt="sponsor logo">
+                </li>
+
             </ul>
         </section>
-        <section class="section">
+        <section class="section bg-alternative">
             <h2>Technical Specifications at a Glance</h2>
             <p>Comprehensive performance data demonstrating our commitment to quality and engineering excellence.</p>
-            <table>
-                <tr>
-                    <th>Parameter</th>
-                    <th>Specification</th>
-                </tr>
-                <tr>
-                    <td>Pipe Diameter Range</td>
-                    <td>20mm to 1600mm (3/4" to 63")</td>
-                </tr>
-                <tr>
-                    <td>Pressure Ratings</td>
-                    <td>PN 2.5, PN 4, PN 6, PN 8, PN 10, PN 12.5, PN 16</td>
-                </tr>
-                <tr>
-                    <td>Standard Dimension Ratio</td>
-                    <td>SDR 33, SDR 26, SDR 21, SDR 17, SDR 13.6, SDR 11</td>
-                </tr>
-                <tr>
-                    <td>Operating Temperature</td>
-                    <td>-40°C to +80°C (-40°F to +176°F)</td>
-                </tr>
-                <tr>
-                    <td>Service Life</td>
-                    <td>50+ Years (at 20°C, PN 10)</td>
-                </tr>
-                <tr>
-                    <td>Material Density</td>
-                    <td>0.95 - 0.96 g/cm³</td>
-                </tr>
-                <tr>
-                    <td>Certification Standards</td>
-                    <td>IS 5984, ISO 4427, ASTM D3035</td>
-                </tr>
-                <tr>
-                    <td>Joint Type</td>
-                    <td>Butt Fusion, Electrofusion, Mechanical</td>
-                </tr>
-                <tr>
-                    <td>Coil Lengths</td>
-                    <td>Up to 500mm (for smaller diameters)</td>
-                </tr>
-                <tr>
-                    <td>Country of Origin</td>
-                    <td>India</td>
-                </tr>
-            </table>
-            <button type="button">
+            <div class="table-div">
+                <table>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Specification</th>
+                    </tr>
+                    <tr>
+                        <td>Pipe Diameter Range</td>
+                        <td>20mm to 1600mm (3/4" to 63")</td>
+                    </tr>
+                    <tr>
+                        <td>Pressure Ratings</td>
+                        <td>PN 2.5, PN 4, PN 6, PN 8, PN 10, PN 12.5, PN 16</td>
+                    </tr>
+                    <tr>
+                        <td>Standard Dimension Ratio</td>
+                        <td>SDR 33, SDR 26, SDR 21, SDR 17, SDR 13.6, SDR 11</td>
+                    </tr>
+                    <tr>
+                        <td>Operating Temperature</td>
+                        <td>-40°C to +80°C (-40°F to +176°F)</td>
+                    </tr>
+                    <tr>
+                        <td>Service Life</td>
+                        <td>50+ Years (at 20°C, PN 10)</td>
+                    </tr>
+                    <tr>
+                        <td>Material Density</td>
+                        <td>0.95 - 0.96 g/cm³</td>
+                    </tr>
+                    <tr>
+                        <td>Certification Standards</td>
+                        <td>IS 5984, ISO 4427, ASTM D3035</td>
+                    </tr>
+                    <tr>
+                        <td>Joint Type</td>
+                        <td>Butt Fusion, Electrofusion, Mechanical</td>
+                    </tr>
+                    <tr>
+                        <td>Coil Lengths</td>
+                        <td>Up to 500mm (for smaller diameters)</td>
+                    </tr>
+                    <tr>
+                        <td>Country of Origin</td>
+                        <td>India</td>
+                    </tr>
+                </table>
+            </div>
+            <button type="button" class="btn">
                 Download Full Technical Datasheet
             </button>
         </section>
@@ -164,17 +181,12 @@
             <h2>Built to Last. Engineered to Perform.</h2>
             <p>From bulk bags to technical threads, Meera delivers precision solutions for every stage of your packaging
                 process.</p>
-            <article>
-                <h3>Superior Chemical Resistance</h3>
-                <p>HDPE pipes resist a wide range of chemicals, acids, and alkalis. Unlike metal pipes, they won't
-                    corrode, rust, or scale, ensuring pure water quality and extended service life in aggressive
-                    environments.</p>
-            </article>
-            <button type="button">Request a Quote</button>
+            <div id="features" role="article" class="card-group flex-box between"></div>
+            <button type="button" class="btn">Request a Quote</button>
         </section>
-        <section>
-            <h2>Frequently Asked Questions</h2>
-            <details>
+        <section class="section">
+            <h2><span class="txt primary">Frequently</span> Asked Questions</h2>
+            <details class="card" open>
                 <summary>It is designed to cut various types of sheet metal with precision, allowing for intricate
                     designs and shapes that are essential in manufacturing processes. </summary>
                 <p>

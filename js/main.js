@@ -61,3 +61,17 @@ document.querySelectorAll('.zoom-container').forEach(container => {
     preview.style.backgroundPosition = `${xPercent}% ${yPercent}%`;
   });
 });
+
+const data = window.productData[0];
+const featuresContainer = document.getElementById("features");
+
+function renderFeatures() {
+  featuresContainer.innerHTML = data.features.map(feature => `
+    <article class="card ${feature.icon}">
+      <h3>${feature.title}</h3>
+      <p>${feature.description}</p>
+    </article>
+  `).join("");
+}
+
+renderFeatures();

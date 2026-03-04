@@ -6,11 +6,30 @@ header {}
 
 .banner-section {
     padding-top: 0;
-    gap: 0 100px
+    font-size: var(--font-14);
+
+    .banner-content {
+        gap: 0 100px;
+
+    }
 }
 
 .breadcrumb-nav {
     padding-block: 32px;
+
+    :is(ol, li) {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+}
+
+.card {
+    border: 1px solid var(--card-border);
+    border-radius: 10px;
+    padding: 1rem 1.25rem;
+    width: fit-content;
+    box-shadow: 0px 2px 4px 0px #1B1C1D0A;
 }
 
 .carousel {
@@ -26,6 +45,7 @@ header {}
 
     .slide {
         min-width: 100%;
+        margin: 0;
     }
 
     .zoom-container {
@@ -95,5 +115,120 @@ header {}
     .carousel-thumbs img.active {
         opacity: 1;
         border: 2px solid black;
+    }
+}
+
+.btn {
+    font-size: 1rem;
+    border-radius: 15px;
+    padding: 0.875rem 2.188rem;
+    border: 1px solid;
+
+    .primary {
+        background-color: var(--primary);
+        color: var(--default-white);
+        border-color: var(--primary);
+    }
+
+    .secondary {}
+}
+
+.list-check {
+    >li {
+        list-style: url(../assets/blue-check.svg);
+        font-size: 1rem;
+        padding-bottom: 1rem;
+
+        &:last-of-type {
+            padding-bottom: 0;
+        }
+    }
+}
+
+.marquee {
+    margin-top: 0.5rem;
+    gap: 10vw;
+
+    p {
+        color: var(--secondary-700);
+    }
+}
+
+.txt-center {
+    text-align: center;
+}
+
+.txt-secondary {
+    color: var(--secondary-700);
+}
+.txt{
+    &.primary{
+        color: var(--primary);
+    }
+}
+
+.bg-alternative {
+    background-color: var(--primary-700);
+    color: var(--default-white);
+
+    p {
+        color: #FFFFFFCC
+    }
+
+    .btn {
+        background-color: transparent;
+        color: var(--default-white);
+        padding: 14px 20px;
+    }
+}
+
+.table-div {
+    background-color: var(--table-color-two);
+    border-radius: 16px;
+    overflow: hidden;
+
+    table {
+        color: var(--default-white);
+
+        th {
+            background-color: var(--table-color-one);
+            padding: 1rem 24px;
+            width: 50%;
+        }
+
+        td {
+            padding: 1rem 24px;
+            width: 50%;
+        }
+    }
+}
+
+.icon {
+    padding-top: 4rem;
+    background-repeat: no-repeat;
+    background-position: 20px 20px;
+
+    &.bag {
+        background-image: url(../assets/Bag.svg);
+    }
+
+    &.needle {
+        background-image: url(../assets/Needle.svg);
+    }
+
+    &.package {
+        background-image: url(../assets/Package.svg);
+    }
+
+    &.gear {
+        background-image: url(../assets/GearFine.svg);
+    }
+}
+.card-group{
+    &.flex-box{
+        gap: 24px;
+        > .card{
+            flex: 1 1 100%;
+        }
     }
 }

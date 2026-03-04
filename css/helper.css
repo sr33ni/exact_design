@@ -18,6 +18,7 @@ body {
   font-size: 16px;
   color: #222;
   background-color: #fff;
+  background:url();
 }
 
 main {
@@ -36,6 +37,7 @@ p {
 
 ul, ol {
   padding-left: 1.5rem;
+  list-style: none;
 }
 
 img, picture, video, canvas, svg {
