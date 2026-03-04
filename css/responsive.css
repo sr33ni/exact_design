@@ -1,0 +1,48 @@
+.section {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 48px 16px 48px 16px;
+}
+
+.section img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+}
+
+@media (min-width: 800px) {
+    .section {
+        padding: 80px 48px 80px 48px;
+    }
+}
+
+@media (min-width: 1080px) {
+    .section {
+        padding: 80px 60px 80px 60px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .section {
+        padding: 80px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .section {
+        padding: 100px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .section {
+        padding: 100px;
+    }
+}
