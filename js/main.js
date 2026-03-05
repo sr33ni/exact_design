@@ -81,7 +81,7 @@ const faqContainer = document.getElementById("faqs");
 function renderFaqs() {
   faqContainer.innerHTML = data.faqs.map((faq, index) => `
     <details class="card" data-index="${index}" ${faq.attribute}>
-      <summary>
+      <summary class="flex-box between nowrap">
          ${faq.question}
       </summary>
       <p>${faq.answer}</p>
@@ -90,3 +90,55 @@ function renderFaqs() {
 }
 
 renderFaqs();
+
+
+const tabs = document.querySelectorAll('.tab');
+const contentTrack = document.querySelector('.process-content');
+const sliders = document.querySelectorAll('.content-item');
+const prev = document.querySelector('.mobile-arrow.prev');
+const next = document.querySelector('.mobile-arrow.next');
+
+let currentIndexs = 0;
+
+/* ========== TAB CLICK (Desktop) ========== */
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+
+        if (window.innerWidth <= 768) return;
+
+        tabs.forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+
+        const index = parseInt(tab.dataset.index);
+        sliders.forEach(s => s.classList.remove('active'));
+        sliders[index].classList.add('active');
+    });
+});
+
+/* ========== MOBILE CAROUSEL ========== */
+function updateCarousel() {
+    contentTrack.style.transform =
+        `translateX(-${currentIndexs * 100}%)`;
+}
+
+next.addEventListener('click', () => {
+    if (currentIndexs < sliders.length - 1) {
+        currentIndexs++;
+        updateCarousel();
+    }
+});
+
+prev.addEventListener('click', () => {
+    if (currentIndexs > 0) {
+        currentIndexs--;
+        updateCarousel();
+    }
+});
+
+/* Sync tab when sliding */
+function syncTabs() {
+    tabs.forEach(t => t.classList.remove('active'));
+    if (tabs[currentIndexs]) {
+        tabs[currentIndexs].classList.add('active');
+    }
+}

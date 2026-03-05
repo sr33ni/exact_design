@@ -14,16 +14,29 @@
 .header {
     padding: 16px;
 }
-h1{
+
+h1 {
     font-size: var(--font-26);
+    font-weight: 700;
 }
-h2{
+
+h2 {
     font-size: var(--font-36);
-    + p{
-        font-size:  var(--font-18);
+    font-weight: 700;
+
+    +p {
+        font-size: var(--font-18);
         color: var(--secondary-600);
     }
 }
+
+h4 {
+    font-size: var(--font-36);
+    font-family: Inter;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
 .flex-box {
     display: flex;
     align-items: center;
@@ -45,17 +58,72 @@ h2{
     &.start {
         justify-content: flex-start;
     }
+
     &.end {
         justify-content: flex-end;
     }
-    &.alg-end{
+
+    &.alg-end {
         align-items: flex-end;
     }
+
+    &.alg-start {
+        align-items: flex-start;
+    }
+
     &.nowrap {
         flex-flow: row nowrap;
     }
-    &.column{
+
+    &.column {
         flex-direction: column;
+    }
+}
+
+.accordian {
+    .card {
+        width: 100%;
+
+        p {
+            color: var(--secondary-800);
+        }
+    }
+
+    details {
+        margin-bottom: 1rem;
+
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+
+        summary {
+            list-style: none;
+            padding-bottom: 1rem;
+
+            &::after {
+                content: "";
+                background-image: url("../assets/accordian-arrow-down.svg");
+                padding: 12px;
+                background-repeat: no-repeat;
+                background-size: 24px;
+            }
+
+        }
+
+        &[open] {
+            summary {
+                list-style: none;
+
+                &::after {
+                    content: "";
+                    background-image: url("../assets/accordian-arrow-up.svg");
+                    padding: 12px;
+                    background-repeat: no-repeat;
+                    background-size: 24px;
+                }
+
+            }
+        }
     }
 }
 
@@ -64,8 +132,16 @@ h2{
         padding: 80px 48px 80px 48px;
     }
 
+    .span-block {
+        display: block;
+    }
+
     .header {
         padding: 16px 48px;
+    }
+
+    h4 {
+        font-size: var(--font-44);
     }
 
     .flex-box {
@@ -75,13 +151,36 @@ h2{
             max-width: calc(50% - 50px);
         }
     }
-.card-group{
-    &.flex-box{
-        > .card{
-            max-width: calc(50% - 12px);
+
+    .accordian {
+        .card {
+            width: 100%;
+
+            p {
+                color: var(--secondary-800);
+            }
+        }
+
+        details {
+            &[open] {
+                summary {
+                    &::after {
+                        background-image: url("../assets/accordian-arrow-lgs.svg");
+                    }
+
+                }
+            }
         }
     }
-}
+
+    .card-group {
+        &.flex-box {
+            >.card {
+                max-width: calc(50% - 12px);
+            }
+        }
+    }
+
     .order-one {
         order: 2;
     }
@@ -93,12 +192,14 @@ h2{
     .order-three {
         order: 3;
     }
-    h1{
-        font-size: var( --font-56);
+
+    h1 {
+        font-size: var(--font-56);
     }
-    h2{
-    font-size: var(--font-48);
-}
+
+    h2 {
+        font-size: var(--font-48);
+    }
 }
 
 @media (min-width: 1080px) {
@@ -109,13 +210,14 @@ h2{
     .header {
         padding-inline: 60px;
     }
-    .card-group{
-    &.flex-box{
-        > .card{
-            max-width: calc(33% - 12px);
+
+    .card-group {
+        &.flex-box {
+            >.card {
+                max-width: calc(33% - 12px);
+            }
         }
     }
-}
 }
 
 @media (min-width: 1200px) {

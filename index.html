@@ -9,10 +9,15 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header flex-box between">
         <a href="/" class="logo">
             <img src="./assets/mainlogo.png" alt="Mangalam HDPE PIPES logo">
         </a>
+        <nav class="header-nav flex-box between">
+            <a href="">About Us</a>
+            <a href="">Product</a>
+            <button type="button" class="btn primary">Contact US</button>
+        </nav>
     </header>
     <main>
         <section class="section banner-section ">
@@ -85,7 +90,7 @@
                 <div class="flex-half order-three">
                     <article class="card">
                         <p>Price Range</p>
-                        <h2>₹4,80,000 - 7,90,000</h2>
+                        <h6>₹4,80,000 - 7,90,000</h6>
                         <span>Shipping: 6-12 days</span>
                         <span>Returns: If returned within 7 days</span>
                         <span>Certifications: ISO Certified, BIS Certified</span>
@@ -190,21 +195,70 @@
 
             </div>
         </section>
-        <section>
-            <article>
+        <section class="section popup-form">
+            <article class="card ">
                 <form>
                     <h3>Want us to email the entire catalogue?</h3>
                     <p>Enter your email and an expert will share the catalogue with you.</p>
-                    <input type="text" name="" id="">
-                    <button type="button">Request Catalogue</button>
+                    <input type="text" name="Email address" id="" placeholder="Email address">
+                    <button type="button" class="btn">Request Catalogue</button>
                 </form>
 
             </article>
-            <section>
-                <h2>Versatile Applications Across Industries</h2>
-                <p>From technical textiles to packaging materials, our precision-engineered machinery delivers superior
-                    performance across diverse applications.</p>
+
+        </section>
+        <section>
+            <section class="section">
+                <h4>Versatile Applications Across <span class="span-block"> Industries</span></h2>
+                    <p>From technical textiles to packaging materials, our precision-engineered <span
+                            class="span-block">machinery delivers
+                            superior
+                            performance across diverse applications.</span></p>
             </section>
+            <div class="non-padding-section">
+                <article class="card flex-box column end alg-start">
+                    <h5>
+                        Fishnet Manufacturing
+                        </h4>
+                        <p>High-performance twisting solutions for packaging yarn, strapping materials, and
+                            reinforcement threads used in modern packaging applications.</p>
+                </article>
+                <article class="card flex-box column end alg-start">
+                    <h5>
+                        Fishnet Manufacturing
+                        </h4>
+                        <p>High-performance twisting solutions for packaging yarn, strapping materials, and
+                            reinforcement threads used in modern packaging applications.</p>
+                </article>
+                <article class="card flex-box column end alg-start">
+                    <h5>
+                        Fishnet Manufacturing
+                        </h4>
+                        <p>High-performance twisting solutions for packaging yarn, strapping materials, and
+                            reinforcement threads used in modern packaging applications.</p>
+                </article>
+                <article class="card flex-box column end alg-start">
+                    <h5>
+                        Fishnet Manufacturing
+                        </h4>
+                        <p>High-performance twisting solutions for packaging yarn, strapping materials, and
+                            reinforcement threads used in modern packaging applications.</p>
+                </article>
+                <article class="card flex-box column end alg-start">
+                    <h5>
+                        Fishnet Manufacturing
+                        </h4>
+                        <p>High-performance twisting solutions for packaging yarn, strapping materials, and
+                            reinforcement threads used in modern packaging applications.</p>
+                </article>
+                <article class="card flex-box column end alg-start">
+                    <h5>
+                        Fishnet Manufacturing
+                        </h4>
+                        <p>High-performance twisting solutions for packaging yarn, strapping materials, and
+                            reinforcement threads used in modern packaging applications.</p>
+                </article>
+            </div>
         </section>
         <section class="section">
             <h2>Advanced HDPE Pipe Manufacturing Process</h2>
@@ -218,6 +272,69 @@
                     <li>Optimal molecular weight distribution</li>
                 </ul>
             </article>
+            <section class="process-section">
+
+                <div class="process-tabs">
+                    <button class="tab active" data-index="0">Raw Material</button>
+                    <button class="tab" data-index="1">Extrusion</button>
+                    <button class="tab" data-index="2">Cooling</button>
+                    <button class="tab" data-index="3">Sizing</button>
+                </div>
+
+                <div class="process-wrapper">
+                    <button class="mobile-arrow prev">&#10094;</button>
+
+                    <div class="process-content">
+
+                        <div class="content-item active">
+                            <div class="text">
+                                <h2>High-Grade Raw Material Selection</h2>
+                                <p>
+                                    Vacuum sizing tanks ensure precise outer diameter
+                                    while internal pressure maintains perfect roundness.
+                                </p>
+                            </div>
+                            <div class="image">
+                                <img src="https://picsum.photos/600/400?1">
+                            </div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="text">
+                                <h2>Advanced Extrusion Process</h2>
+                                <p>Precision-controlled extrusion ensures uniform flow.</p>
+                            </div>
+                            <div class="image">
+                                <img src="https://picsum.photos/600/400?2">
+                            </div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="text">
+                                <h2>Cooling Technology</h2>
+                                <p>Maintains dimensional accuracy and stability.</p>
+                            </div>
+                            <div class="image">
+                                <img src="https://picsum.photos/600/400?3">
+                            </div>
+                        </div>
+
+                        <div class="content-item">
+                            <div class="text">
+                                <h2>Precision Sizing</h2>
+                                <p>Ensures accurate diameter and smooth finish.</p>
+                            </div>
+                            <div class="image">
+                                <img src="https://picsum.photos/600/400?4">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <button class="mobile-arrow next">&#10095;</button>
+                </div>
+
+            </section>
         </section>
         <section>
             <h2>Trusted Performance. Proven Results</h2>

@@ -1,8 +1,26 @@
 @import url(./variables.css);
 @import url(./helper.css);
 @import url(./responsive.css);
-
-header {}
+.header-nav{
+    font-size: var(--font-14);
+    gap: 1rem;
+    .btn{
+        padding: 12px 16px;
+        font-size: var(--font-14);
+    }
+}
+h3 {
+    font-size: var(--font-26);
+    font-family: Urbanist;
+    font-weight: 700;
+}
+input {
+    padding: 12px 10px;
+    box-shadow: 0px 1px 2px 0px #0A0D1408;
+    border: 1px solid var(--input-border);
+    border-radius: 8px;
+    width: 100%;
+}
 
 .banner-section {
     padding-top: 0;
@@ -34,13 +52,15 @@ header {}
 
 .carousel {
     position: relative;
-    max-width: 1240px;
+    width: clamp(452px, 90vw, 570px);
+    height: clamp(452px, 90vw, 570px);
     margin: 0 auto;
     overflow: hidden;
 
     .carousel-track {
         display: flex;
         transition: transform 0.4s ease;
+        height: 100%;
     }
 
     .slide {
@@ -50,14 +70,12 @@ header {}
 
     .zoom-container {
         position: relative;
-    }
-
-    .zoom-container img {
+        img {
         width: 100%;
         display: block;
+        height: 100%;
     }
-
-    /* Zoom Preview */
+    }
     .zoom-preview {
         position: absolute;
         top: 20px;
@@ -123,8 +141,9 @@ header {}
     border-radius: 15px;
     padding: 0.875rem 2.188rem;
     border: 1px solid;
+    line-height: 1;
 
-    .primary {
+    &.primary {
         background-color: var(--primary);
         color: var(--default-white);
         border-color: var(--primary);
@@ -161,8 +180,9 @@ header {}
 .txt-secondary {
     color: var(--secondary-700);
 }
-.txt{
-    &.primary{
+
+.txt {
+    &.primary {
         color: var(--primary);
     }
 }
@@ -224,20 +244,146 @@ header {}
         background-image: url(../assets/GearFine.svg);
     }
 }
-.card-group{
-    &.flex-box{
+
+.card-group {
+    &.flex-box {
         gap: 24px;
-        > .card{
+
+        >.card {
             flex: 1 1 100%;
         }
     }
 }
 
-.accordian{
-    .card{
-        width: 100%;
-        p{
+.popup-form {
+    padding-top: 6px;
+    .card {
+        p {
+            font-size: 1rem;
             color: var(--secondary-800);
         }
+    }
+}
+
+.non-padding-section {
+    overflow: auto;
+    gap: 1rem;
+    display: flex;
+    .card {
+        min-width: 26.25rem;
+        height: 26.25rem;
+        background:
+            linear-gradient(180deg,
+                rgba(0, 0, 0, 0) 0%,
+                rgba(0, 0, 0, 0.58) 40%,
+                rgba(0, 0, 0, 0.8) 76%),
+            url("../assets/sample_image.jpg");
+
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        color: var(--default-white);
+        font-family: Urbanist;
+        font-weight: 300;
+        h5{
+            font-size: var(--font-26);
+        }
+        p{
+            color: var(--default-white);
+        }
+    }
+}
+
+.process-section {
+    background: #f3f3f3;
+    padding: 40px;
+    border-radius: 16px;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+/* Tabs */
+.process-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.tab {
+    padding: 8px 18px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    background: #eee;
+    cursor: pointer;
+}
+
+.tab.active {
+    background: #2f3b87;
+    color: #fff;
+}
+
+/* Wrapper */
+.process-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Content */
+.process-content {
+    display: flex;
+    transition: transform 0.4s ease;
+}
+
+/* Slide */
+.content-item {
+    min-width: 100%;
+    display: none;
+    gap: 40px;
+    align-items: center;
+}
+
+.content-item.active {
+    display: flex;
+}
+
+/* Image */
+.image img {
+    width: 100%;
+    border-radius: 16px;
+}
+
+/* Mobile Arrows (hidden desktop) */
+.mobile-arrow {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.mobile-arrow.prev { left: 0; }
+.mobile-arrow.next { right: 0; }
+
+/* -------------------
+   MOBILE MODE
+------------------- */
+@media (max-width: 768px) {
+
+    .process-tabs {
+        display: none; /* hide tabs */
+    }
+
+    .content-item {
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    .mobile-arrow {
+        display: block;
     }
 }

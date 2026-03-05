@@ -8,6 +8,7 @@
   --secondary-600:#6A7077;
   --secondary-700:#878B94;
   --secondary-800:#535A61;
+  --secondary--900:#262A2E;
 
 
   --breadcrumb-last: #4D545C;
@@ -17,6 +18,7 @@
   --table-color-two:#1F2937;
 
   --card-border:#CFD1D4;
+  --input-border:#E1E3E8;
 
   --font-14: 0.875rem;
     --font-18: 1.125rem;
@@ -24,6 +26,7 @@
   --font-56: 3.5rem;
   --font-36: 2.25rem;
   --font-48: 3rem;
+  --font-44:2.75rem
 }
 
 @font-face {
@@ -45,6 +48,30 @@
 @font-face {
   font-family: 'Inter';
   src: url('../font/Inter_18pt-Thin.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Urbanist';
+  src: url('../font/Inter_18pt-Medium.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Urbanist';
+  src: url('../font/Urbanist-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Urbanist';
+  src: url('../font/Urbanist-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
