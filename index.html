@@ -1,5 +1,4 @@
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,13 +6,15 @@
     <link rel="stylesheet" href="css/index.css">
     <script src="js/content.js"></script>
 </head>
-
 <body>
-    <header class="header flex-box between">
+    <header class="header flex-box between" id="header">
         <a href="/" class="logo">
             <img src="./assets/mainlogo.png" alt="Mangalam HDPE PIPES logo">
         </a>
-        <nav class="header-nav flex-box between">
+        <div class=" menu">
+      <span class="burger"></span>
+    </div>
+        <nav class="header-nav flex-box">
             <a href="">About Us</a>
             <a href="">Product</a>
             <button type="button" class="btn primary">Contact US</button>
@@ -49,43 +50,32 @@
                     </ul>
                 </div>
                 <div class="flex-half order-two">
-                    <section class="carousel" aria-label="Image Gallery">
-
-                        <div class="carousel-track">
-
-                            <figure class="slide">
-                                <div class="zoom-container">
-                                    <img src="https://picsum.photos/800/500?1" alt="Gallery Image 1">
-                                    <div class="zoom-preview"></div>
-                                </div>
-                            </figure>
-
-                            <figure class="slide">
-                                <div class="zoom-container">
-                                    <img src="https://picsum.photos/800/500?2" alt="Gallery Image 2">
-                                    <div class="zoom-preview"></div>
-                                </div>
-                            </figure>
-
-                            <figure class="slide">
-                                <div class="zoom-container">
-                                    <img src="https://picsum.photos/800/500?3" alt="Gallery Image 3">
-                                    <div class="zoom-preview"></div>
-                                </div>
-                            </figure>
-
-                        </div>
-
-                        <nav class="carousel-controls" aria-label="Carousel Navigation">
-                            <button class="carousel-btn prev" aria-label="Previous Slide">‹</button>
-                            <button class="carousel-btn next" aria-label="Next Slide">›</button>
-                        </nav>
-
-                        <nav class="carousel-thumbnails" aria-label="Thumbnail Navigation">
-                            <ul class="carousel-thumbs"></ul>
-                        </nav>
-
-                    </section>
+<section class="carousel" aria-label="Image Gallery">
+    <div class="carousel-track">
+        <figure class="slide">
+            <div class="zoom-container">
+                <img class="carousel-img" src="./assets/sample_image.jpg" alt="Gallery Image 1">
+            </div>
+        </figure>
+        <figure class="slide">
+            <div class="zoom-container">
+                <img class="carousel-img" src="https://picsum.photos/800/500?2" alt="Gallery Image 2">
+            </div>
+        </figure>
+        <figure class="slide">
+            <div class="zoom-container">
+                <img class="carousel-img" src="https://picsum.photos/800/500?3" alt="Gallery Image 3">
+            </div>
+        </figure>
+    </div>
+    <nav class="carousel-controls" aria-label="Carousel Navigation">
+        <button class="carousel-btn prev" aria-label="Previous Slide">‹</button>
+        <button class="carousel-btn next" aria-label="Next Slide">›</button>
+    </nav>
+    <nav class="carousel-thumbnails" aria-label="Thumbnail Navigation">
+        <ul class="carousel-thumbs"></ul>
+    </nav>
+</section>
                 </div>
                 <div class="flex-half order-three">
                     <article class="card">
@@ -124,7 +114,6 @@
                 <li>
                     <img src="./assets/spon-info.png" width="121px" alt="sponsor logo">
                 </li>
-
             </ul>
         </section>
         <section class="section bg-alternative">
@@ -192,10 +181,9 @@
         <section class="section">
             <h2><span class="txt primary">Frequently</span> Asked Questions</h2>
             <div id="faqs" role="list" class="accordian">
-
             </div>
         </section>
-        <section class="section popup-form">
+        <section class="section popup-form flex-box center">
             <article class="card ">
                 <form>
                     <h3>Want us to email the entire catalogue?</h3>
@@ -203,9 +191,7 @@
                     <input type="text" name="Email address" id="" placeholder="Email address">
                     <button type="button" class="btn">Request Catalogue</button>
                 </form>
-
             </article>
-
         </section>
         <section>
             <section class="section">
@@ -272,69 +258,6 @@
                     <li>Optimal molecular weight distribution</li>
                 </ul>
             </article>
-            <section class="process-section">
-
-                <div class="process-tabs">
-                    <button class="tab active" data-index="0">Raw Material</button>
-                    <button class="tab" data-index="1">Extrusion</button>
-                    <button class="tab" data-index="2">Cooling</button>
-                    <button class="tab" data-index="3">Sizing</button>
-                </div>
-
-                <div class="process-wrapper">
-                    <button class="mobile-arrow prev">&#10094;</button>
-
-                    <div class="process-content">
-
-                        <div class="content-item active">
-                            <div class="text">
-                                <h2>High-Grade Raw Material Selection</h2>
-                                <p>
-                                    Vacuum sizing tanks ensure precise outer diameter
-                                    while internal pressure maintains perfect roundness.
-                                </p>
-                            </div>
-                            <div class="image">
-                                <img src="https://picsum.photos/600/400?1">
-                            </div>
-                        </div>
-
-                        <div class="content-item">
-                            <div class="text">
-                                <h2>Advanced Extrusion Process</h2>
-                                <p>Precision-controlled extrusion ensures uniform flow.</p>
-                            </div>
-                            <div class="image">
-                                <img src="https://picsum.photos/600/400?2">
-                            </div>
-                        </div>
-
-                        <div class="content-item">
-                            <div class="text">
-                                <h2>Cooling Technology</h2>
-                                <p>Maintains dimensional accuracy and stability.</p>
-                            </div>
-                            <div class="image">
-                                <img src="https://picsum.photos/600/400?3">
-                            </div>
-                        </div>
-
-                        <div class="content-item">
-                            <div class="text">
-                                <h2>Precision Sizing</h2>
-                                <p>Ensures accurate diameter and smooth finish.</p>
-                            </div>
-                            <div class="image">
-                                <img src="https://picsum.photos/600/400?4">
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <button class="mobile-arrow next">&#10095;</button>
-                </div>
-
-            </section>
         </section>
         <section>
             <h2>Trusted Performance. Proven Results</h2>
@@ -379,5 +302,4 @@
     </main>
     <script src="./js/main.js"></script>
 </body>
-
 </html>
